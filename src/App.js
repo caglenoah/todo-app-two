@@ -27,7 +27,9 @@ class App extends React.Component {
 
   handleSubmit = () => {
     this.setState({
-      todos: [this.state.text]
+      todos: [...this.state.todos, this.state.text], 
+      text: ""
+
     })
   }
 
